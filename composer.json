@@ -1,0 +1,33 @@
+{
+    "name": "cpp/zns-package",
+    "description": "Zalo OAuth authentication package for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CPP",
+            "email": "contact@cpp.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^10.0|^11.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CPP\\ZNSPackage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CPP\\ZNSPackage\\ZNSServiceProvider"
+            ],
+            "aliases": {
+                "ZNS": "CPP\\ZNSPackage\\Facades\\ZNS"
+            }
+        }
+    }
+}
